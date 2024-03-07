@@ -1,6 +1,7 @@
 # Spring Boot + Apache Camel + ActiveMQ Artemis
 
 Documentation:
+
 * [JMS SSL Dual Authentication Example](https://github.com/apache/activemq-artemis/tree/2.30.0/examples/features/standard/ssl-enabled-dual-authentication)
 * [Docker - Overriding files in etc folder](https://activemq.apache.org/components/artemis/documentation/latest/docker.html#overriding-files-in-etc-folder)
 
