@@ -1,0 +1,14 @@
+camel:
+  springboot:
+    main-run-controller: true
+
+activemq:
+  host: "localhost"
+  port: 61616
+  brokerURL: "tcp://${activemq.host}:${activemq.port}"
+  username: "artemis"
+  password: "artemis"
+
+application:
+  uri-consumer: "jms:queue:MY_QUEUE"
+  uri-producer: "jms:queue:MY_QUEUE"
