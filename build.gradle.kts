@@ -1,6 +1,6 @@
 plugins {
   java
-  id("org.springframework.boot") version "2.7.14"
+  id("org.springframework.boot") version "2.7.18"
   id("io.spring.dependency-management") version "1.0.15.RELEASE"
 }
 
@@ -15,18 +15,17 @@ repositories {
   mavenCentral()
 }
 
+val artemisVersion = "2.32.0"
+
 dependencies {
-  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:3.20.6"))
+  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:3.22.1"))
   implementation("org.apache.camel.springboot:camel-spring-boot-starter")
 
   implementation("org.apache.camel.springboot:camel-jms-starter")
-  implementation("org.apache.activemq:activemq-core:5.7.0")
-
-  testImplementation("org.springframework.boot:spring-boot-starter-test")
-
-  testImplementation("org.apache.camel:camel-test-junit5")
-  testImplementation("org.awaitility:awaitility:4.2.0")
-  testImplementation("org.testcontainers:junit-jupiter:1.18.3")
+  implementation("org.apache.activemq:artemis-commons:$artemisVersion")
+  implementation("org.apache.activemq:artemis-selector:$artemisVersion")
+  implementation("org.apache.activemq:artemis-core-client:$artemisVersion")
+  implementation("org.apache.activemq:artemis-jms-client:$artemisVersion")
 }
 
 tasks.withType<Test> {

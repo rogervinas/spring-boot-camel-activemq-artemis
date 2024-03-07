@@ -5,9 +5,13 @@ camel:
 activemq:
   host: "localhost"
   port: 61616
-  brokerURL: "tcp://${activemq.host}:${activemq.port}"
+  keyStore: "client-keystore.jks"
+  keyStorePassword: "securepass"
+  trustStore: "server-ca-truststore.jks"
+  trustStorePassword: "securepass"
   username: "artemis"
   password: "artemis"
+  brokerURL: "tcp://${activemq.host}:${activemq.port}?sslEnabled=true&trustStorePath=${activemq.trustStore}&trustStorePassword=${activemq.trustStorePassword}&keyStorePath=${activemq.keyStore}&keyStorePassword=${activemq.keyStorePassword}"
 
 application:
   uri-consumer: "jms:queue:MY_QUEUE"

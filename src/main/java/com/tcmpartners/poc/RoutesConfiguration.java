@@ -30,7 +30,7 @@ public class RoutesConfiguration {
 
       @Override
       public void configure() {
-        from("timer:producer?period=10000")
+        from("timer:producer?period=5000")
           .setBody(e -> "Hello " + counter++)
           .log("PRODUCE ${body}")
           .to(uriTo);
