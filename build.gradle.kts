@@ -1,7 +1,7 @@
 plugins {
   java
-  id("org.springframework.boot") version "2.7.18"
-  id("io.spring.dependency-management") version "1.0.15.RELEASE"
+  id("org.springframework.boot") version "3.2.3"
+  id("io.spring.dependency-management") version "1.1.4"
 }
 
 group = "com.tcmpartners"
@@ -18,14 +18,14 @@ repositories {
 val artemisVersion = "2.32.0"
 
 dependencies {
-  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:3.22.1"))
+  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.4.0"))
   implementation("org.apache.camel.springboot:camel-spring-boot-starter")
 
   implementation("org.apache.camel.springboot:camel-jms-starter")
   implementation("org.apache.activemq:artemis-commons:$artemisVersion")
   implementation("org.apache.activemq:artemis-selector:$artemisVersion")
   implementation("org.apache.activemq:artemis-core-client:$artemisVersion")
-  implementation("org.apache.activemq:artemis-jms-client:$artemisVersion")
+  implementation("org.apache.activemq:artemis-jakarta-client:$artemisVersion")
 
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.awaitility:awaitility:4.2.0")
