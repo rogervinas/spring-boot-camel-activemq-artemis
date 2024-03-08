@@ -1,3 +1,5 @@
+[![CI](https://github.com/rogervinas/spring-boot-camel-activemq-artemis/actions/workflows/gradle.yml/badge.svg)](https://github.com/rogervinas/spring-boot-camel-activemq-artemis/actions/workflows/gradle.yml)
+
 # Spring Boot + Apache Camel + ActiveMQ Artemis
 
 Documentation:
