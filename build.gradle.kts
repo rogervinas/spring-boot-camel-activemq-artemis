@@ -26,6 +26,10 @@ dependencies {
   implementation("org.apache.activemq:artemis-selector:$artemisVersion")
   implementation("org.apache.activemq:artemis-core-client:$artemisVersion")
   implementation("org.apache.activemq:artemis-jms-client:$artemisVersion")
+
+  testImplementation("org.springframework.boot:spring-boot-starter-test")
+  testImplementation("org.awaitility:awaitility:4.2.0")
+  testImplementation("org.testcontainers:junit-jupiter:1.19.7")
 }
 
 tasks.withType<Test> {
