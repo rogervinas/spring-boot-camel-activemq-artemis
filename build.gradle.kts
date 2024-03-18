@@ -18,7 +18,7 @@ repositories {
 val artemisVersion = "2.32.0"
 
 dependencies {
-  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.4.0"))
+  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.4.1"))
   implementation("org.apache.camel.springboot:camel-spring-boot-starter")
 
   implementation("org.apache.camel.springboot:camel-jms-starter")
