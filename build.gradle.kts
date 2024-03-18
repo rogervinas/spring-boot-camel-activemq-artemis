@@ -28,7 +28,7 @@ dependencies {
   implementation("org.apache.activemq:artemis-jakarta-client:$artemisVersion")
 
   testImplementation("org.springframework.boot:spring-boot-starter-test")
-  testImplementation("org.awaitility:awaitility:4.2.0")
+  testImplementation("org.awaitility:awaitility:4.2.1")
   testImplementation("org.testcontainers:junit-jupiter:1.19.7")
 }
 
