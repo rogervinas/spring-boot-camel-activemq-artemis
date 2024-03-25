@@ -15,7 +15,7 @@ repositories {
   mavenCentral()
 }
 
-val artemisVersion = "2.32.0"
+val artemisVersion = "2.33.0"
 
 dependencies {
   implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.4.1"))
