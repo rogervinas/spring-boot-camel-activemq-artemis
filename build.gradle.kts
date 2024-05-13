@@ -29,7 +29,7 @@ dependencies {
 
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.awaitility:awaitility:4.2.1")
-  testImplementation("org.testcontainers:junit-jupiter:1.19.7")
+  testImplementation("org.testcontainers:junit-jupiter:1.19.8")
 }
 
 tasks.withType<Test> {
