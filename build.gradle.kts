@@ -18,7 +18,7 @@ repositories {
 val artemisVersion = "2.33.0"
 
 dependencies {
-  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.5.0"))
+  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.6.0"))
   implementation("org.apache.camel.springboot:camel-spring-boot-starter")
 
   implementation("org.apache.camel.springboot:camel-jms-starter")
@@ -29,7 +29,7 @@ dependencies {
 
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.awaitility:awaitility:4.2.1")
-  testImplementation("org.testcontainers:junit-jupiter:1.19.7")
+  testImplementation("org.testcontainers:junit-jupiter:1.19.8")
 }
 
 tasks.withType<Test> {
