@@ -1,15 +1,16 @@
+import org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED
+import org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED
+import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
+
 plugins {
   java
   id("org.springframework.boot") version "3.3.0"
   id("io.spring.dependency-management") version "1.1.5"
+  id("org.jlleitschuh.gradle.ktlint") version "12.1.1"
 }
 
 group = "com.tcmpartners"
 version = "0.0.1-SNAPSHOT"
-
-java {
-  sourceCompatibility = JavaVersion.VERSION_17
-}
 
 repositories {
   mavenCentral()
@@ -32,13 +33,15 @@ dependencies {
   testImplementation("org.testcontainers:junit-jupiter:1.19.8")
 }
 
+java {
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
+}
+
 tasks.withType<Test> {
   useJUnitPlatform()
   testLogging {
-    events(
-      org.gradle.api.tasks.testing.logging.TestLogEvent.PASSED,
-      org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED,
-      org.gradle.api.tasks.testing.logging.TestLogEvent.FAILED
-    )
+    events(PASSED, SKIPPED, FAILED)
   }
 }

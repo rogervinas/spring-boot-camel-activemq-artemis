@@ -19,7 +19,7 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
-        java-version: '17'
+        java-version: '21'
         distribution: 'temurin'
     - name: Build with Gradle
       uses: gradle/gradle-build-action@04b20c065cf1ab708c96e64a8811018d0a1fbc88
