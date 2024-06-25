@@ -1,4 +1,4 @@
-package com.tcmpartners.poc;
+package com.rogervinas.poc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

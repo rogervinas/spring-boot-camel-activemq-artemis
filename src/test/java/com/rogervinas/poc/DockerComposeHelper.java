@@ -1,4 +1,4 @@
-package com.tcmpartners.poc;
+package com.rogervinas.poc;
 
 import org.testcontainers.containers.ComposeContainer;
 import org.testcontainers.containers.DockerComposeContainer;

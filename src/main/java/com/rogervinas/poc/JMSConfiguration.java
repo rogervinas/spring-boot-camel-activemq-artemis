@@ -1,4 +1,4 @@
-package com.tcmpartners.poc;
+package com.rogervinas.poc;
 
 import jakarta.jms.ConnectionFactory;
 import org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory;

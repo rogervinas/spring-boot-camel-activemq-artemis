@@ -1,4 +1,4 @@
-package com.tcmpartners.poc;
+package com.rogervinas.poc;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
