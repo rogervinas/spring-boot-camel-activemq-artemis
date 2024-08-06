@@ -1,7 +1,7 @@
 services:
 
   activemq:
-    image: apache/activemq-artemis:2.35.0
+    image: apache/activemq-artemis:2.36.0
     volumes:
       - ./artemis-instance/etc-override:/var/lib/artemis-instance/etc-override
     ports:
