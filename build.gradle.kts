@@ -4,8 +4,8 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 
 plugins {
   java
-  id("org.springframework.boot") version "3.4.0"
-  id("io.spring.dependency-management") version "1.1.6"
+  id("org.springframework.boot") version "3.4.3"
+  id("io.spring.dependency-management") version "1.1.7"
   id("org.jlleitschuh.gradle.ktlint") version "12.1.2"
 }
 
@@ -16,10 +16,10 @@ repositories {
   mavenCentral()
 }
 
-val artemisVersion = "2.38.0"
+val artemisVersion = "2.39.0"
 
 dependencies {
-  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.8.1"))
+  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.10.0"))
   implementation("org.apache.camel.springboot:camel-spring-boot-starter")
 
   implementation("org.apache.camel.springboot:camel-jms-starter")
@@ -29,8 +29,8 @@ dependencies {
   implementation("org.apache.activemq:artemis-jakarta-client:$artemisVersion")
 
   testImplementation("org.springframework.boot:spring-boot-starter-test")
-  testImplementation("org.awaitility:awaitility:4.2.2")
-  testImplementation("org.testcontainers:junit-jupiter:1.20.4")
+  testImplementation("org.awaitility:awaitility:4.3.0")
+  testImplementation("org.testcontainers:junit-jupiter:1.20.5")
 }
 
 java {
