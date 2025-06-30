@@ -30,7 +30,7 @@ dependencies {
 
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.awaitility:awaitility:4.3.0")
-  testImplementation("org.testcontainers:junit-jupiter:1.21.2")
+  testImplementation("org.testcontainers:junit-jupiter:1.21.3")
 }
 
 java {
