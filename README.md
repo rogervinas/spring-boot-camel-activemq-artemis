@@ -2,7 +2,7 @@
 ![Java](https://img.shields.io/badge/Java-21-blue?labelColor=black)
 ![SpringBoot](https://img.shields.io/badge/SpringBoot-4.x-blue?labelColor=black)
 ![ApacheCamel](https://img.shields.io/badge/ApacheCamel-4.x-blue?labelColor=black)
-![ActiveMQ-Artemis](https://img.shields.io/badge/ActiveMQ--Artemis-2.44.0-blue?labelColor=black)
+![ActiveMQ-Artemis](https://img.shields.io/badge/ActiveMQ--Artemis-2.x-blue?labelColor=black)
 
 
 
