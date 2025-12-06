@@ -13,7 +13,6 @@ public class DockerComposeHelper {
 
   public static ComposeContainer createContainer() {
     return new ComposeContainer(new File("docker-compose.yml"))
-      .withLocalCompose(true)
       .withExposedService(ACTIVEMQ, ACTIVEMQ_PORT)
       .waitingFor(ACTIVEMQ, forLogMessage(".*Server is now active.*", 1));
   }

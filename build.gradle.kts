@@ -4,9 +4,9 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 
 plugins {
   java
-  id("org.springframework.boot") version "3.5.7"
+  id("org.springframework.boot") version "4.0.0"
   id("io.spring.dependency-management") version "1.1.7"
-  id("org.jlleitschuh.gradle.ktlint") version "13.1.0"
+  id("org.jlleitschuh.gradle.ktlint") version "14.0.1"
 }
 
 group = "com.rogervinas"
