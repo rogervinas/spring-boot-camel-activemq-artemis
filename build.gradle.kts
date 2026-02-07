@@ -4,7 +4,7 @@ import org.gradle.api.tasks.testing.logging.TestLogEvent.SKIPPED
 
 plugins {
   java
-  id("org.springframework.boot") version "4.0.1"
+  id("org.springframework.boot") version "4.0.2"
   id("io.spring.dependency-management") version "1.1.7"
   id("org.jlleitschuh.gradle.ktlint") version "14.0.1"
 }
@@ -16,10 +16,10 @@ repositories {
   mavenCentral()
 }
 
-val artemisVersion = "2.44.0"
+val artemisVersion = "2.50.0"
 
 dependencies {
-  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.16.0"))
+  implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.17.0"))
   implementation("org.apache.camel.springboot:camel-spring-boot-starter")
 
   implementation("org.apache.camel.springboot:camel-jms-starter")
