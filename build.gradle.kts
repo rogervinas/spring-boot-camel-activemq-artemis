@@ -6,7 +6,7 @@ plugins {
   java
   id("org.springframework.boot") version "4.0.3"
   id("io.spring.dependency-management") version "1.1.7"
-  id("org.jlleitschuh.gradle.ktlint") version "14.0.1"
+  id("org.jlleitschuh.gradle.ktlint") version "14.1.0"
 }
 
 group = "com.rogervinas"
@@ -16,7 +16,7 @@ repositories {
   mavenCentral()
 }
 
-val artemisVersion = "2.51.0"
+val artemisVersion = "2.52.0"
 
 dependencies {
   implementation(platform("org.apache.camel.springboot:camel-spring-boot-dependencies:4.18.0"))
